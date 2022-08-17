@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Promises training</title>
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +24,7 @@
               Delay (ms)
               <input
                 type="number"
-                name="first-delay"
+                name="delay"
                 step="1000"
                 min="1000"
                 required
@@ -32,7 +32,7 @@
             </label>
             <label>
               Amount
-              <input type="number" name="first-amount" required />
+              <input type="number" name="amount" required />
             </label>
 
             <button type="submit" data-start>Color first box</button>
@@ -41,24 +41,14 @@
         </div>
         <div class="wrapper">
           <div class="box second">BOX-2</div>
-          <form class="second-form">
+          <div class="second-form">
             <label>
-              Delay (ms)
-              <input
-                type="number"
-                name="second-delay"
-                step="1000"
-                min="1000"
-                required
-              />
-            </label>
-            <label>
-              Amount
-              <input type="number" name="second-amount" required />
+              Data
+              <input type="text" id="datetime-picker" />
             </label>
             <button type="submit" data-start>Color second box</button>
             <button class="button" type="submit" data-stop>Reset</button>
-          </form>
+          </div>
         </div>
         <div class="wrapper">
           <div class="box third">BOX-3</div>
@@ -95,5 +85,6 @@
         <button class="button" type="submit" data-stop>Reset</button>
       </form>
     </div>
+    <script src="./js/promise.js"></script>
   </body>
 </html>
