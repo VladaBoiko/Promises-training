@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises training</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        <div class="wrapper">
+          <div class="box first">BOX-1</div>
+          <form class="first-form">
+            <label>
+              Delay (ms)
+              <input
+                type="number"
+                name="first-delay"
+                step="1000"
+                min="1000"
+                required
+              />
+            </label>
+            <label>
+              Amount
+              <input type="number" name="first-amount" required />
+            </label>
+
+            <button type="submit" data-start>Color first box</button>
+            <button class="button" type="submit" data-stop>Reset</button>
+          </form>
+        </div>
+        <div class="wrapper">
+          <div class="box second">BOX-2</div>
+          <form class="second-form">
+            <label>
+              Delay (ms)
+              <input
+                type="number"
+                name="second-delay"
+                step="1000"
+                min="1000"
+                required
+              />
+            </label>
+            <label>
+              Amount
+              <input type="number" name="second-amount" required />
+            </label>
+            <button type="submit" data-start>Color second box</button>
+            <button class="button" type="submit" data-stop>Reset</button>
+          </form>
+        </div>
+        <div class="wrapper">
+          <div class="box third">BOX-3</div>
+          <form class="third-form">
+            <label>
+              Delay (ms)
+              <input
+                type="number"
+                name="third-delay"
+                step="1000"
+                min="1000"
+                required
+              />
+            </label>
+            <label>
+              Amount
+              <input type="number" name="third-amount" />
+            </label>
+            <button type="submit" data-start>Color third box</button>
+            <button class="button" type="submit" data-stop>Reset</button>
+          </form>
+        </div>
+      </div>
+      <form class="unite-form">
+        <label>
+          Delay (ms)
+          <input type="number" name="delay" step="1000" min="1000" required />
+        </label>
+        <label>
+          Amount
+          <input type="number" name="amount" />
+        </label>
+        <button type="submit" data-start>Color all boxes</button>
+        <button class="button" type="submit" data-stop>Reset</button>
+      </form>
+    </div>
+  </body>
+</html>

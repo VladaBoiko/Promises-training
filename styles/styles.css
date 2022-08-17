@@ -1,0 +1,54 @@
+body {
+  padding: 100px;
+  font-family: "DynaPuff", cursive;
+  font-size: 20px;
+  line-height: 2;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+button {
+  font-family: "DynaPuff", cursive;
+  font-size: 14px;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: rgb(9, 138, 138);
+  color: aliceblue;
+  cursor: pointer;
+}
+.button {
+  margin-bottom: 50px;
+}
+button:hover {
+  background-color: rgb(10, 78, 78);
+}
+input {
+  height: 30px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.wrapper {
+  display: flex;
+}
+.box {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(10, 78, 78);
+  margin-right: 10px;
+}
+.unite-form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 100px;
+}
