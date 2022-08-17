@@ -50,6 +50,9 @@ input {
   border: 1px solid rgb(10, 78, 78);
   margin-right: 10px;
 }
+.box.second {
+  margin-bottom: 50px;
+}
 .unite-form {
   display: flex;
   flex-direction: column;
