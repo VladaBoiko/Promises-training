@@ -5,16 +5,16 @@ function getRandomHexColor() {
 const firstForm = document.querySelector('.first-form');
 const firstRefs = {
   firstBox: document.querySelector('.first'),
-  startBtn: firstForm.querySelector('[data-start]'),
+  // startBtn: firstForm.querySelector('[data-start]'),
   stopBtn: firstForm.querySelector('[data-stop]'),
 };
-
-const secondForm = document.querySelector('.second-form');
-const secondRefs = {
-  secondtBox: document.querySelector('.second'),
-  startBtn: secondForm.querySelector('[data-start]'),
-  stopBtn: secondForm.querySelector('[data-stop]'),
-};
+firstRefs.stopBtn.disabled = true;
+// const secondForm = document.querySelector('.second-form');
+// const secondRefs = {
+//   secondtBox: document.querySelector('.second'),
+//   startBtn: secondForm.querySelector('[data-start]'),
+//   stopBtn: secondForm.querySelector('[data-stop]'),
+// };
 
 // const thirdForm = document.querySelector(".third-form");
 // const thirdRefs = {
@@ -23,11 +23,11 @@ const secondRefs = {
 //   stopBtn: thirdForm.querySelector("[data-stop]"),
 // };
 
-const uniteForm = document.querySelector('.unite-form');
-const uniteRefs = {
-  startBtn: uniteForm.querySelector('[data-start]'),
-  stopBtn: uniteForm.querySelector('[data-stop]'),
-};
+// const uniteForm = document.querySelector('.unite-form');
+// const uniteRefs = {
+//   startBtn: uniteForm.querySelector('[data-start]'),
+//   stopBtn: uniteForm.querySelector('[data-stop]'),
+// };
 
 firstForm.addEventListener('submit', evt => {
   evt.preventDefault();

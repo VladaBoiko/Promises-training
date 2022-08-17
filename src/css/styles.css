@@ -1,6 +1,6 @@
 body {
   padding: 100px;
-  font-family: "DynaPuff", cursive;
+  font-family: 'DynaPuff', cursive;
   font-size: 20px;
   line-height: 2;
 }
@@ -14,7 +14,7 @@ label {
   justify-content: start;
 }
 button {
-  font-family: "DynaPuff", cursive;
+  font-family: 'DynaPuff', cursive;
   font-size: 14px;
   width: 150px;
   height: 40px;
@@ -28,6 +28,10 @@ button {
 }
 button:hover {
   background-color: rgb(10, 78, 78);
+}
+button:disabled {
+  background-color: rgb(124, 124, 124);
+  pointer-events: none;
 }
 input {
   height: 30px;
