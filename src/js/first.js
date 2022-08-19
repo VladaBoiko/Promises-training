@@ -39,6 +39,7 @@ firstForm.addEventListener('submit', evt => {
 
   for (let i = 1; i <= currentAmount; i += 1) {
     const color = getRandomHexColor();
+    firstRefs.firstBox.style.backgroundColor = `${color}`;
     createPromise(currentDelay, color).then(color => {
       firstRefs.firstBox.style.backgroundColor = `${color}`;
     });

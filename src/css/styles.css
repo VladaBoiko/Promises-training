@@ -59,3 +59,24 @@ input {
   align-self: center;
   margin-left: 100px;
 }
+.timer {
+  display: flex;
+  margin-top: -30px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.field:not(:last-child) {
+  margin-right: 20px;
+  border-right: 1px solid rgb(10, 78, 78);
+  padding-right: 10px;
+}
+
+.value {
+  color: rgb(10, 78, 78);
+}
+.label {
+  font-weight: 400;
+  font-size: 14px;
+}
